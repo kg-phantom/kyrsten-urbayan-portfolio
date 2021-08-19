@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+figure {
+    display: flex;
+    height: 500px;
+    background-image: url("../images/runbuddysc.PNG");
+    background-position: top;
+    background-size: cover;
+}
