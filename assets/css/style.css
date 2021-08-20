@@ -1,13 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-figure {
+header nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-work h2 {
+    width: 100%;
+}
+
+.project1 {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.run-buddy {
     display: flex;
     height: 500px;
+    width: 100%;
     background-image: url("../images/runbuddysc.PNG");
     background-position: top;
     background-size: cover;
+}
+
+figcaption {
+    display: flex;
+}
+
+.horiseon {
+    display: flex;
+    width: 100%;
+    background-image: url("../images/horiseon-screenshot.png");
+    background-position: top;
+    background-size: cover;
+}
+
+.projects {
+    display: flex;
+    height:300px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.project3 {
+    display: flex;
+    width: 100%;
+    background-image: url("../images/placeholder.jpg");
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
