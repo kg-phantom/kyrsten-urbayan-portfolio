@@ -77,17 +77,13 @@ h2 {
     flex-wrap: wrap;
 }
 
-.my-work h2 {
-    width: 100%;
-}
-
 .project1 {
     width: 90%;
     margin: 0px auto;
     opacity: 0.6;
 }
 
-.project1:hover {
+.project1:hover, .projects:hover {
     opacity: 1;
 }
 
@@ -113,6 +109,7 @@ h2 {
     height:300px;
     width: 90%;
     margin: 0px auto;
+    opacity: 0.6;
 }
 
 .project3 {
@@ -142,8 +139,15 @@ footer {
 }
 
 footer a {
+    padding: 5px 5px;
     height: fit-content;
+    width: fit-content;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--secondary-color);
+}
+
+footer a:hover {
+    background-color: black;
+    border-radius: 10px;
 }
