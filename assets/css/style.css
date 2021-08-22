@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(95, 0, 0);
-    --secondary-color: rgb(207, 207, 207);
+    --secondary-color: white;
 }
 
 * {
@@ -68,6 +68,7 @@ header nav ul li a:hover {
 section.section-title {
     display: flex;
     flex: wrap;
+    background-color: rgb(68, 63, 63);
 }
 
 h2 {
@@ -83,6 +84,7 @@ h2 {
     margin: 20px 0 20px 0;
     display: flex;
     background-color: var(--primary-color);
+    align-self: baseline;
 }
 
 .section-title h2 {
@@ -91,8 +93,15 @@ h2 {
     color: var(--secondary-color);
 }
 
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .about-me p {
     width: 40%;
+    color: var(--secondary-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     margin: 50px;
@@ -100,8 +109,12 @@ h2 {
 }
 
 .about-me img {
-    width: 50%;
+    width: auto;
+    height: auto;
+    max-height: 400px;
     margin: auto;
+    margin-top: 50px;
+    border-radius: 50%;
 }
 
 .my-work {
@@ -112,7 +125,7 @@ h2 {
 .project1 {
     width: 90%;
     margin: 5px auto;
-    opacity: 0.6;
+    
 }
 
 .project1:hover, .projects:hover {
@@ -123,9 +136,14 @@ h2 {
     display: flex;
     height: 500px;
     width: 100%;
+    opacity: 0.6;
     background-image: url("../images/runbuddysc.PNG");
     background-position: top;
     background-size: cover;
+}
+
+.run-buddy:hover {
+    opacity: 1;
 }
 
 .horiseon {
