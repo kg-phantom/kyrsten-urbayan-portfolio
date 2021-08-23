@@ -14,6 +14,7 @@ a {
     text-decoration: none;
 }
 
+/* HEADER STYLES */
 header {
     display: flex;
     justify-content: space-between;
@@ -38,7 +39,7 @@ header a {
     color: var(--secondary-color);
     transition: .75s;
 }
-
+/* Turns h1 text to black on hover*/
 header h1 a:hover {
     color: black;
 }
@@ -64,11 +65,12 @@ header nav ul li a {
     font-size: 1.5vw;
     transition: .5s;
 }
-
+/* Displays black box around nav links on hover*/
 header nav ul li a:hover {
     border-radius: 15px;
     background-color: black;
 }
+/* HEADER STYLES END */
 
 .hero {
     width: 100%;
@@ -79,14 +81,16 @@ header nav ul li a:hover {
     background-attachment: fixed;
 }
 
+/* Background color for all content below Hero */
 .content {
     background-image: linear-gradient(var(--gradient-color), black);
 }
 
+/* SECTION BOOKMARK TAB STYLES */
 section.section-title {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -112,7 +116,9 @@ h2 {
     text-align: right;
     color: var(--secondary-color);
 }
+/* SECTION BOOKMARK TAB STYLES END */
 
+/* ABOUT ME STYLES */
 .about-me {
     display: flex;
     justify-content: space-between;
@@ -136,25 +142,26 @@ h2 {
     border-radius: 50%;
     transition: 1s;
 }
-
+/* Transitions to larger image and border on hover*/
 .about-me img:hover {
     max-height: 450px;
     border: 10px var(--gradient-color);
     border-style: groove;
 }
+/* ABOUT ME STYLES END */
 
+/* MY WORK STYLES */
 .my-work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .project1 {
-    width: 70%;
-    margin: 100px auto 0px auto;
-    
+    width: 90%;
+    margin: 50px auto 0px auto;
 }
-
+/* Project previews transition to opaque on hover */
 .run-buddy:hover, .project1:hover, .projects:hover {
     opacity: 1;
 }
@@ -163,10 +170,13 @@ h2 {
     display: flex;
     height: 500px;
     width: 100%;
+    margin: 5px 0;
     opacity: 0.5;
     background-image: url("../images/runbuddysc.PNG");
     background-position: top;
     background-size: cover;
+    border: 10px solid black;
+    border-radius: 15px;
     transition: .5s;
 }
 
@@ -181,14 +191,13 @@ h2 {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     height:300px;
-    width: 35%;
-    margin: 5px;
+    width: 45%;
+    margin: 5px 0;
     opacity: 0.5;
     transition: .5s;
 }
-
+/* Placeholder class until more projects are completed */
 .sub-projects {
     display: flex;
     width: 100%;
@@ -206,8 +215,11 @@ figcaption {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+/* MY WORK STYLES END */
 
+/* FOOTER STYLES */
 footer {
+    margin-top: 50px;
     height: 200px;
 }
 
@@ -231,8 +243,9 @@ footer section a {
     color: var(--secondary-color);
     transition: .5s;
 }
-
+/* Displays red box around contact links on hover*/
 footer a:hover {
     background-color: var(--primary-color);
     border-radius: 15px;
 }
+/* FOOTER STYLES END*/
