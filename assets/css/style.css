@@ -1,6 +1,8 @@
 :root {
     --primary-color: rgb(95, 0, 0);
     --secondary-color: white;
+    --gradient-color: rgb(167, 64, 64);
+    --background-color: rgb(126, 79, 79);
 }
 
 * {
@@ -17,7 +19,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 35px;
-    background-color: var(--primary-color);
+    background-image: linear-gradient(to bottom right, var(--primary-color), var(--gradient-color));
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -26,6 +28,7 @@ header {
 
 header h1 {
     color: var(--secondary-color);
+    letter-spacing: 5px;
     font-weight: lighter;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 45px;
@@ -33,9 +36,16 @@ header h1 {
 
 header a {
     color: var(--secondary-color);
+    transition: .75s;
+}
+
+header h1 a:hover {
+    color: black;
 }
 
 header nav {
+    display: flex;
+    flex-wrap: wrap;
     margin: 7px 0;
 }
 
@@ -52,23 +62,30 @@ header nav ul li a {
     font-weight: lighter;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5vw;
+    transition: .5s;
 }
 
-header nav ul li a:hover {
-    background-color: black;
+header nav ul li a:hover, footer a:hover {
     border-radius: 15px;
+    background-color: black;
 }
 
 .hero {
     width: 100%;
     height: 400px;
-    background-image: url("../images/placeholder.jpg");
+    background-image: url("../images/pexels-anni-roenkae-3219951.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    background-image: linear-gradient(red, black);
 }
 
 section.section-title {
     display: flex;
-    flex: wrap;
-    background-color: rgb(68, 63, 63);
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -79,7 +96,7 @@ h2 {
 }
 
 .section-title div {
-    width: 25%;
+    width: 15%;
     height: fit-content;
     margin: 20px 0 20px 0;
     display: flex;
@@ -103,7 +120,7 @@ h2 {
     width: 40%;
     color: var(--secondary-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     margin: 50px;
     line-height: 1.5;
 }
@@ -112,9 +129,15 @@ h2 {
     width: auto;
     height: auto;
     max-height: 400px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
     border-radius: 50%;
+    transition: 1s;
+}
+
+.about-me img:hover {
+    max-height: 450px;
+    border: 10px var(--gradient-color);
+    border-style: groove;
 }
 
 .my-work {
@@ -123,12 +146,12 @@ h2 {
 }
 
 .project1 {
-    width: 90%;
-    margin: 5px auto;
+    width: 70%;
+    margin: 75px auto;
     
 }
 
-.project1:hover, .projects:hover {
+.run-buddy:hover, .project1:hover, .projects:hover {
     opacity: 1;
 }
 
@@ -136,14 +159,11 @@ h2 {
     display: flex;
     height: 500px;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.5;
     background-image: url("../images/runbuddysc.PNG");
     background-position: top;
     background-size: cover;
-}
-
-.run-buddy:hover {
-    opacity: 1;
+    transition: .5s;
 }
 
 .horiseon {
@@ -156,13 +176,16 @@ h2 {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     height:300px;
-    width: 90%;
-    margin: 5px auto;
-    opacity: 0.6;
+    width: 35%;
+    margin: 5px;
+    opacity: 0.5;
+    transition: .5s;
 }
 
-.project3 {
+.sub-projects {
     display: flex;
     width: 100%;
     background-image: url("../images/placeholder.jpg");
@@ -182,7 +205,7 @@ figcaption {
 
 footer {
     height: 200px;
-    background-color: var(--primary-color);
+    background-image: linear-gradient(to bottom right, var(--primary-color), var(--gradient-color));
 }
 
 footer h2 {
@@ -195,16 +218,13 @@ footer h2 {
     align-items: center;
 }
 
-footer div a {
+footer section a {
     padding: 5px 5px;
     height: fit-content;
     width: fit-content;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
     color: var(--secondary-color);
-}
-
-footer a:hover {
-    background-color: black;
-    border-radius: 10px;
+    transition: .5s;
 }
