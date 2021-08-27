@@ -3,7 +3,7 @@ Portfolio of my work samples for future potential employers to view to determine
 
 https://kg-phantom.github.io/kyrsten-urbayan-portfolio/
 
-<img src="./portfolioscreenshot.png" />
+<img src="./assets/images/portfolioscreenshot.png" />
 
 ## Header Navigation
 There is a navigation menu in the header of the webpage. Clicking on a navigation link will bring the user to the desired section of the page.
