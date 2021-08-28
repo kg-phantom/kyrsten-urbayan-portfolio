@@ -178,6 +178,11 @@ figure {
 #gladiators {
     background-image: url("../images/robot-glad-screenshot.PNG");
 }
+
+#pass-generator {
+    background-image: url("../images/pass-gen-sc.PNG");
+}
+
 .projects {
     height:300px;
     width: 45%;
