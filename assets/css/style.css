@@ -183,6 +183,10 @@ figure {
     background-image: url("../images/pass-gen-sc.PNG");
 }
 
+#taskinator {
+    background-image: url("../images/taskinator-sc.PNG");
+}
+
 .projects {
     height:300px;
     width: 45%;
