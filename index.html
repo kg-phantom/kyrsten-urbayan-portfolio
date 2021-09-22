@@ -41,82 +41,97 @@
 
     <div class="content uk-background-muted">
         <!-- About Me -->
-        <section class="about-me section-title" id="about-me">
-            <div>
+        <section class="section about-me" id="about-me" uk-grid>
+            <div class="section-title uk-width-1-5">
                 <h2>About Me</h2>
             </div>
-            <p>
-                I am a mathematics student pursuing a career in web and software development. 
-                <br />
-                <br />
-                From a young age, I have always had a passion for art and mathematics but struggled to find an interlap between them. I have walked down the roads of math and the arts separately, exploring different facets of each. I pursued a career in the arts by majoring in Illustration. However, I missed working with numbers, functions, and formulas. Switching over to a major in mathematics, I still craved the creativity of art and design. After being introduced to coding, I was met with a solution. Why settle for just math or art when I can do both? I look forward to combining my passions for art, math, and tech in order to produce effective, creative, and entertaining projects!
-            </p>
-            <img src="assets/images/headshot.jpg" alt="Kyrsten Urbayan" />
+            <div class="uk-width-2-5">
+                <p>
+                    I am a mathematics student pursuing a career in web and software development. 
+                    <br />
+                    <br />
+                    From a young age, I have always had a passion for art and mathematics but struggled to find an interlap between them. I have walked down the roads of math and the arts separately, exploring different facets of each. I pursued a career in the arts by majoring in Illustration. However, I missed working with numbers, functions, and formulas. Switching over to a major in mathematics, I still craved the creativity of art and design. After being introduced to coding, I was met with a solution. Why settle for just math or art when I can do both? I look forward to combining my passions for art, math, and tech in order to produce effective, creative, and entertaining projects!
+                </p>
+            </div>
+            <div class="uk-width-2-5">
+                <img class="uk-align-center" src="assets/images/headshot.jpg" alt="Kyrsten Urbayan" />
+            </div>
         </section>
 
         <!-- Skills -->
-        <section class="section-title" id="skills">
-            <div>
+        <section class="section" id="skills" uk-grid>
+            <div class="section-title uk-width-1-5">
                 <h2>Skills</h2>
             </div>
         </section>
 
         <!-- My Work -->
-        <section class="my-work section-title flex-row" id="my-work">
-            <div>
+        <section class="section my-work" id="my-work" uk-grid>
+            <div class="section-title uk-width-1-5">
                 <h2>My Work</h2>
             </div>
-            <a class="project1" href="https://kg-phantom.github.io/run-buddy/index.html" target="_blank">
-                <figure class="run-buddy">
-                    <figcaption>
-                        Run Buddy
-                        <br />
-                        HTML/CSS
-                    </figcaption>
-                </figure>
-                
-            </a>
-            <a class="projects flex-row" href="https://kg-phantom.github.io/" target="_blank">
-                <figure id="horiseon">
-                    <figcaption>
-                        Horiseon
-                        <br />
-                        HTML/CSS
-                    </figcaption>
-                </figure>
-            </a>
-            <a class="projects flex-row" href="https://kg-phantom.github.io/robot-gladiators/" target="_blank">
-                <figure id="gladiators">
-                    <figcaption>
-                        Robot Gladiators
-                        <br />
-                        Javascript
-                    </figcaption>
-                </figure>
-            </a>
-            <a class="projects flex-row" href="https://kg-phantom.github.io/password-generator/" target="_blank">
-                <figure id="pass-generator">
-                    <figcaption>
-                        Password Generator
-                        <br />
-                        Javascript
-                    </figcaption>
-                </figure>
-            </a>
-            <a class="projects flex-row" href="https://kg-phantom.github.io/taskinator/" target="_blank">
-                <figure id="taskinator">
-                    <figcaption>
-                        Taskinator
-                        <br />
-                        Javascript
-                    </figcaption>
-                </figure>
-            </a>
+            <div class="uk-width-4-5" uk-grid>
+                <div class="uk-card uk-card-large uk-card-body uk-card-hover uk-card-secondary uk-width-1-1">
+                    <a class="project1" href="https://kg-phantom.github.io/run-buddy/index.html" target="_blank">
+                        <figure class="run-buddy">
+                            <figcaption class="uk-card-title">
+                                Run Buddy
+                                <br />
+                                HTML/CSS
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="uk-card uk-card-body uk-card-hover  uk-card-secondary uk-width-1-2">
+                    <a class="projects flex-row" href="https://kg-phantom.github.io/" target="_blank">
+                        <figure id="horiseon">
+                            <figcaption class="uk-card-title">
+                                Horiseon
+                                <br />
+                                HTML/CSS
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="uk-card uk-card-body uk-card-hover  uk-card-secondary uk-width-1-2">
+                    <a class="projects flex-row" href="https://kg-phantom.github.io/robot-gladiators/" target="_blank">
+                        <figure id="gladiators">
+                            <figcaption class="uk-card-title">
+                                Robot Gladiators
+                                <br />
+                                Javascript
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="uk-card uk-card-body uk-card-hover uk-card-secondary uk-width-1-2">
+                    <a class="projects flex-row" href="https://kg-phantom.github.io/password-generator/" target="_blank">
+                        <figure id="pass-generator">
+                            <figcaption class="uk-card-title">
+                                Password Generator
+                                <br />
+                                Javascript
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="uk-card uk-card-body uk-card-hover  uk-card-secondary uk-width-1-2">
+                    <a class="projects flex-row" href="https://kg-phantom.github.io/taskinator/" target="_blank">
+                        <figure id="taskinator">
+                            <figcaption class="uk-card-title">
+                                Taskinator
+                                <br />
+                                Javascript
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Me -->
-        <footer class="section-title" id="contact-me">
-            <div>
+        <footer class="section" id="contact-me" uk-grid>
+            <div class="section-title uk-width-1-5">
                 <h2>Contact Me</h2>
             </div>
             <section class="contact-links flex-row">
