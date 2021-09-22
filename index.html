@@ -3,38 +3,43 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Kyrsten Urbayan</title>
 </head>
 
 <body>
-    <header class="flex-row">
-        <h1>
-            <a href="index.html">Kyrsten Urbayan</a>
-        </h1>
-        <!-- Navigation -->
-        <nav>
-            <ul class="flex-row">
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-work">My Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="https://docs.google.com/document/d/17IareP6UP77vsuER9539wveYoDvTccJDAg1XDWiGxg0/edit?usp=sharing">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="uk-background-secondary uk-light" uk-sticky uk-navbar>
+        <div class="uk-navbar-center">   
+            <!-- Navigation -->
+            <div class="uk-navbar-center-left">
+                <ul class="uk-navbar-nav uk-padding-large uk-padding-remove-vertical uk-padding-remove-left">
+                    <li class="uk-padding uk-padding-remove-vertical">
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#my-work">My Work</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="uk-logo uk-navbar-item" href="index.html">Kyrsten Urbayan</a>
+            <div class="uk-navbar-center-right">
+                <ul class="uk-navbar-nav uk-padding-large uk-padding-remove-vertical uk-padding-remove-right">
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                    <li class="uk-padding uk-padding-remove-vertical">
+                        <a href="https://docs.google.com/document/d/17IareP6UP77vsuER9539wveYoDvTccJDAg1XDWiGxg0/edit?usp=sharing">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero -->
     <div class="hero"></div>
 
-    <div class="content">
+    <div class="content uk-background-muted">
         <!-- About Me -->
         <section class="about-me section-title" id="about-me">
             <div>
@@ -122,7 +127,8 @@
         </footer>
     </div>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>

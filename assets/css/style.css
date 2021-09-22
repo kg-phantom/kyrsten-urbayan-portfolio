@@ -14,57 +14,11 @@ a {
     text-decoration: none;
 }
 
-/* HEADER STYLES */
-header {
-    justify-content: space-between;
-    padding: 20px 35px;
-    background-image: linear-gradient(to bottom right, var(--primary-color), var(--gradient-color));
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-}
-
-header h1 {
-    color: var(--secondary-color);
+nav a.uk-logo {
     letter-spacing: 5px;
     font-weight: lighter;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
-
-header a {
-    color: var(--secondary-color);
-    transition: .75s;
-}
-/* Turns h1 text to black on hover*/
-header h1 a:hover {
-    color: black;
-}
-
-header nav {
-    margin: 7px 0;
-}
-
-header nav ul {
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.55vw;
-    transition: .5s;
-}
-/* Displays black box around nav links on hover*/
-header nav ul li a:hover {
-    border-radius: 15px;
-    background-color: black;
-}
-/* HEADER STYLES END */
 
 .hero {
     width: 100%;
@@ -75,10 +29,10 @@ header nav ul li a:hover {
     background-attachment: fixed;
 }
 
-/* Background color for all content below Hero */
+/* Background color for all content below Hero
 .content {
     background-image: linear-gradient(var(--gradient-color), black);
-}
+} */
 
 /* SECTION BOOKMARK TAB STYLES */
 h2 {
@@ -115,7 +69,6 @@ h2 {
 
 .about-me p {
     width: 40%;
-    color: var(--secondary-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     margin: 50px;
@@ -232,7 +185,6 @@ footer section a {
     font-size: 1.5vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
-    color: var(--secondary-color);
     transition: .5s;
 }
 /* Displays red box around contact links on hover*/
