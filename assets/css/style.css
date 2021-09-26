@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(95, 0, 0);
+    --primary-color: rgb(129 23 29);
     --secondary-color: rgb(255, 255, 255);
     --gradient-color: rgb(167, 64, 64);
     --background-color: rgb(126, 79, 79);
@@ -8,10 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
 }
 
 nav a.uk-logo {
@@ -55,32 +51,18 @@ h2 {
 }*/
 /* SECTION BOOKMARK TAB STYLES END */
 
-/* ABOUT ME STYLES 
-.about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about-me p {
-    width: 40%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    margin: 50px;
-    line-height: 1.5;
-}*/
+/* ABOUT ME STYLES */
 
 .about-me img {
     width: auto;
     height: auto;
-    max-height: 400px;
-    margin: 50px auto;
+    max-height: 300px;
     border-radius: 50%;
     transition: 1s;
 }
 /* Transitions to larger image and border on hover*/
 .about-me img:hover {
-    max-height: 450px;
+    max-height: 350px;
     border: 10px var(--gradient-color);
     border-style: groove;
 }
@@ -91,13 +73,8 @@ h2 {
     justify-content: space-between;
 }
 
-.project1 {
-    width: 90%;
-    margin: 50px auto 0px auto;
-}
-/* Project previews transition to opaque on hover 
-.run-buddy:hover, .project1:hover, .projects:hover {
-    opacity: 1;
+#run-buddy {
+    padding-left: 0px;
 }
 
 .run-buddy {
@@ -105,18 +82,6 @@ h2 {
     opacity: 0.5;
     background-image: url("../images/runbuddysc.PNG");
     transition: .5s;
-}
-
-figure {
-    display: flex;
-    width: 100%;
-    background-position: top;
-    background-size: cover;
-}
-
-.project1, .projects {
-    border: 10px solid rgb(44, 8, 8);
-    border-radius: 15px;
 }
 
 #horiseon {
@@ -134,26 +99,6 @@ figure {
 #taskinator {
     background-image: url("../images/taskinator-sc.PNG");
 }
-
-.projects {
-    height:300px;
-    width: 45%;
-    margin: 5px 0;
-    opacity: 0.5;
-    transition: .5s;
-}
-
-figcaption {
-    text-align: center;
-    opacity: 1;
-    width: 40%;
-    height: fit-content;
-    font-size: 35px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    box-shadow: 5px 5px 5px black;
-    text-shadow: 3px 3px 3px black;
-}*/
 /* MY WORK STYLES END */
 
 /* FOOTER STYLES */
@@ -176,17 +121,12 @@ footer section a {
     font-weight: lighter;
     transition: .5s;
 }
-/* Displays red box around contact links on hover*/
+/* Displays red box around contact links on hover
 footer a:hover {
     background-color: var(--primary-color);
     border-radius: 15px;
-}
-/* FOOTER STYLES END*/
-
-/* .flex-row { 
-    display: flex;
-    flex-wrap: wrap;
 }*/
+/* FOOTER STYLES END*/
 
 /* Media query for small desktop screens and smaller */
 @media screen and (max-width: 980px) {
