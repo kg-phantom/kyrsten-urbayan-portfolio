@@ -83,22 +83,6 @@ h2 {
     background-image: url("../images/runbuddysc.PNG");
     transition: .5s;
 }
-
-#horiseon {
-    background-image: url("../images/horiseon-screenshot.png");
-}
-
-#gladiators {
-    background-image: url("../images/robot-glad-screenshot.PNG");
-}
-
-#pass-generator {
-    background-image: url("../images/pass-gen-sc.PNG");
-}
-
-#taskinator {
-    background-image: url("../images/taskinator-sc.PNG");
-}
 /* MY WORK STYLES END */
 
 /* FOOTER STYLES */
